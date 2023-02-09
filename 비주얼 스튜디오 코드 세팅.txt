@@ -1,0 +1,1 @@
+Select Default Profile = 터미널설정 (단축키 Ctrl + Shift + p를 사용하여 )

@@ -1,0 +1,53 @@
+음수
+
+속성:text-indent : 어떤 속성을 사라지게 하고싶을 때 쓸 수 있는 속성으로 이때는 꼭 -9999를 사용
+
+============================================================
+띄움
+
+1 : float : 요소를 띄울 때 쓰임 / left,right
+2 : clear : 요소를 정리할 때 쓰임 / both(모두),left,right
+
+
+============================================================
+문자
+
+1.color : 문자색상
+2.text-align : 문자 정렬
+3.text-decoration : 문자 장식/선
+4.text-indent : 문자 첫줄의 들여쓰기
+5.letter-spacing :문자 사이 간격/자간
+6.word-spacing : 단어 사이 간격
+
+============================================================
+배경
+
+1.background-color :배경 색상
+
+2.background-image : 배경 이미지
+
+3.background-repeat : 배경 이미지의 반복 처리 | repeat-y,x / no-repeat
+
+4.background-position : 배경 이미지의 위치를 조정 | top left/Right,center, px로 지정
+
+5.background-size : 배경 이미지의 크기 | cover(요소의 넓은 너비에 맞춤), contain(요소의 짧은 너비에 맞춤), px로 지정
+
+6.background-attachment : 배경 이미지의 스크롤 특성 지정 | scroll(이미지가 따라감), fixed(이미자 고정됨)
+
+============================================================
+배치
+
+기본속성 : position
+
+1.top,bottom,left,right : 요소의 실제 위치를 지정
+
+2.relative : 자신이 있는 자리 기준
+
+3.absolute : 상위 요소중 position의 속성의 값인 요소를 기준으로 잡음 / static제외
+
+4.fixed : 주로 뷰포트를 기준으로 요소를 배치함 / 스크롤을 하여도 위치고정
+
+============================================================
+요소 쌓임 순서
+
+속성 : z-index : 숫자가 높을수록 우선순서

@@ -1,0 +1,88 @@
+Container,items
+
+Container : flex에서만 정의되는 상위요소
+
+items : flex에서만 정의되는 하위요소
+
+---------------------------------------------------------------------------------------------------------
+1.주 축 : main-axis(main-start,main-end)
+2.교차축 : cross-axis(cross-start,cross-end)
+
+============================================================
+1.display(flex를 정의할 때 사용)
+
+(1)flex : block특성의 flex Container를 정의
+
+(2)inline-flex : inline특성의 flex Container를 정의
+
+============================================================
+2.flex flow(items의 주축을 설정하고 줄바꿈을 설정)
+
+(1)flex-direction : items의 주 축 설정
+
+(2)flex-wrap : items의 여러 줄묶음 설정
+
+값
+
+1.row : items를 왼쪽에서 오른쪽으로 표시
+2.row-reverse : items를 오른쪽에서 왼쪽으로 표시(row의 반전)
+3.column : items를 위에서 아래로 표시
+4.column-reverse : items를 아래서 위로 표시(column의 반전)
+
+============================================================
+3.flex-wrap(items의 여러 줄바꿈을 설정)
+
+(1)nowrap : 모든 items를 여러줄로 묶지않음(한줄에 표시)
+(2)wrap : Items를 여러줄로 묶음
+(3)warp-reverse : items를 wrap의 반대방향으로 여러줄 묶음
+
+============================================================
+4.justify-content(주 축의 정렬방법을 설정)
+
+
+(1)flex-start : items를 시작점에 정렬
+(2)flex-end : items를 끝점에 정렬(flex-start의 반전)
+(3)center : items를 가운데에 정렬
+(4)space-between : 시작점과 끝점에 items가 정렬되고 나머지는 사이사이에 고르게 정렬
+(5)space-around : items를 균등한 여백에 포함해 정렬
+
+============================================================
+5.align-content(교차축의 정렬방법 설정)
+
+(1)stretch : Container의 교차축을 채우기 위해 items를 늘림
+(2)flex-start : items를 시작점으로 정렬
+(3)flex-end : items를 끝점으로 정렬
+(4)center : items를 가운데로 정렬
+(5)space-between : items이 시작점과 끝점에 각각 정렬되고 나머지 items들은 items사이에 고르게 정렬
+(6)space-around : items를 균등한 여백을 포함하여 정렬
+
+============================================================
+6.align-items(교차축에서 items의 정렬방법을 설정)
+
+
+(1)stretch : Container의 교차축을 채우기 위해 items를 늘림
+(2)flex-start : items를 시작점으로 정렬
+(3)flex-end : items를 끝점으로 정렬
+(4)center : items를 가운데로 정렬
+(5)baseline : items를 문자 기준선에 정렬
+
+============================================================
+7.order(items에 숫자를 지정 / 숫자가 클수록 뒤로밀림) *음수허용
+
+예: order: 1 / order: -1
+
+============================================================
+8.flex-grow(items의 증가너비 설정 / 숫자가 클수록 더많은 공간차지)
+
+예: korea:nth-child(2){flex-grow: 2;}
+
+============================================================
+9.flex-shrink(items이 감소하는 넒이 지정 / 0으로 설정하면 item감소X)
+
+예: flex-shrink: 0;
+
+============================================================
+10.flex-basis(items의 공간이 배분되기 전의 기본 너비 설정)
+
+(1)auto : 요소 내용의 기본 너비로 사용
+(2)px,em,cm으로 지정
